@@ -14,7 +14,15 @@ export const Container = styled.div`
         display: none;
     }
 `;
-export const Banner = styled.div``;
+export const Banner = styled.div`
+    flex-shrink: 0;
+
+    width: 100%;
+    height: min(33vw, 199px);
+
+    background: var(--twitter);
+    position: relative;
+`;
 export const Avatar = styled.div``;
 export const ProfileData = styled.div``;
 
