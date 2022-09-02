@@ -3,6 +3,7 @@ import React from 'react';
 import { Container, Header, BackIcon, ProfileInfo, BottomMenu, HomeIcon, SearchIcon, BellIcon, EmailIcon } from './styles';
 
 import ProfilePage from '../ProfilePage';
+import Feed from '../Feed';
 
 const Main = () => {
   return (
@@ -19,6 +20,8 @@ const Main = () => {
       </Header>
 
       <ProfilePage />
+
+      <Feed/>
 
       <BottomMenu>
         <HomeIcon className='active' />

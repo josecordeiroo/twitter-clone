@@ -8,7 +8,7 @@ import {
   LocationIcon,
   CakeIcon,
   Followage,
-  EditButtonOne
+  EditButtonOne,
 } from './styles';
 
 const ProfilePage = () => {
@@ -28,20 +28,20 @@ const ProfilePage = () => {
         <ul>
           <li>
             <LocationIcon />
-             São Paulo, Brasil
+            São Paulo, Brasil
           </li>
           <li>
             <CakeIcon />
-             Ingressou em janeiro de 2019
+            Ingressou em janeiro de 2019
           </li>
         </ul>
 
         <Followage>
           <span>
-            seguindo <strong>17</strong>
+            <strong>17 </strong>Seguindo
           </span>
           <span>
-            <strong>182 </strong>seguidores
+            <strong>182 </strong>Seguidores
           </span>
         </Followage>
       </ProfileData>
