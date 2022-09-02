@@ -1,6 +1,15 @@
 import React from 'react';
 
-import { Container, Banner, Avatar, ProfileData, LocationIcon, CakeIcon, Followage } from './styles';
+import {
+  Container,
+  Banner,
+  Avatar,
+  ProfileData,
+  LocationIcon,
+  CakeIcon,
+  Followage,
+  EditButtonOne
+} from './styles';
 
 const ProfilePage = () => {
   return (
@@ -10,7 +19,7 @@ const ProfilePage = () => {
       </Banner>
 
       <ProfileData>
-        {/* <EditButton outlined>Editar perfil</EditButton> */}
+        <EditButtonOne>Editar perfil</EditButtonOne>
         <h1>Zeca Cordeiro</h1>
         <h2>@zecaxcr</h2>
 
@@ -19,20 +28,20 @@ const ProfilePage = () => {
         <ul>
           <li>
             <LocationIcon />
-            São Paulo, Brasil
+             São Paulo, Brasil
           </li>
           <li>
             <CakeIcon />
-            Ingressou em janeiro de 2019
+             Ingressou em janeiro de 2019
           </li>
         </ul>
 
         <Followage>
           <span>
             seguindo <strong>17</strong>
-            <span>
-              <strong>182 </strong>seguidores
-            </span>
+          </span>
+          <span>
+            <strong>182 </strong>seguidores
           </span>
         </Followage>
       </ProfileData>
