@@ -21,8 +21,8 @@ import {
 const Tweet = () => {
   return (
     <Container>
-      <Retweeted>Você retweetou</Retweeted>
-      <UserIcon />
+      <Retweeted><UserIcon /> Você retweetou</Retweeted>
+      
       <Body>
         <Avatar />
         <Content>
