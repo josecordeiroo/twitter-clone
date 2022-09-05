@@ -37,16 +37,16 @@ const MenuBar = () => {
           <FavoriteIcon />
           <span>Favoritados</span>
         </MenuButton>
+
+        <MenuButton clasName="active">
+          <ProfileIcon />
+          <span>Perfil</span>
+        </MenuButton>
+
+        <Button>
+          <span>Tweetar</span>
+        </Button>
       </Topside>
-
-      <MenuButton clasName="active">
-        <ProfileIcon />
-        <span>Perfil</span>
-      </MenuButton>
-
-      <Button>
-        <span>Tweetar</span>
-      </Button>
     </Container>
   );
 };
