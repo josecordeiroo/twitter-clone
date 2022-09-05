@@ -13,6 +13,7 @@ export const Container = styled.div`
 export const Retweeted = styled.div`
   display: flex;
   align-items: center;
+  margin-top: 10px;
 
   font-size: 13px;
   color: var(--gray);
@@ -30,7 +31,7 @@ export const UserIcon = styled(Retweet)`
 `;
 export const Body = styled.div`
   display: flex;
-  margin-top: 3px;
+  margin: 15px;
 
   position: relative;
 `;
@@ -122,32 +123,49 @@ export const Icons = styled.div`
   }
 `;
 export const Status = styled.div`
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    font-size: 14px;
-    
-    > svg {
-        margin-right: 5px;
-    }
+  font-size: 14px;
 
-    &:nth-child(1) {
-        &, svg path {
-            color: var(--gray);
-        }
-    }
+  margin-bottom: 10px;
 
-    &:nth-child(2) {
-        &, svg path {
-            color: var(--retweet);
-        }
+  > svg {
+    margin-right: 5px;
+  }
+
+  &:nth-child(1) {
+    &,
+    svg path {
+      color: var(--gray);
     }
+  }
+
+  &:nth-child(2) {
+    &,
+    svg path {
+      color: var(--retweet);
+    }
+  }
+
+  &:nth-child(3) {
+    &,
+    svg path {
+      color: var(--like);
+    }
+  }
 `;
 
 const iconCSS = css`
-    width: 19px;
-    height: 19px;
+  width: 19px;
+  height: 19px;
 `;
-export const CommentIcon = styled(Chat)`${iconCSS}`;
-export const RetweetIcon = styled(Retweet)`${iconCSS}`;
-export const LiketIcon = styled(Favorite)`${iconCSS}`;
+export const CommentIcon = styled(Chat)`
+  ${iconCSS}
+`;
+export const RetweetIcon = styled(Retweet)`
+  ${iconCSS}
+`;
+export const LiketIcon = styled(Favorite)`
+  ${iconCSS}
+`;

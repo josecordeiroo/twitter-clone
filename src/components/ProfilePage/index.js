@@ -20,8 +20,8 @@ const ProfilePage = () => {
 
       <ProfileData>
         <EditButtonOne>Editar perfil</EditButtonOne>
-        <h1>Zeca Cordeiro</h1>
-        <h2>@zecaxcr</h2>
+        <h1>José Cordeiro</h1>
+        <h2>@josecordeiroo</h2>
 
         <p>FullStack Developer</p>
 
@@ -32,13 +32,13 @@ const ProfilePage = () => {
           </li>
           <li>
             <CakeIcon />
-            Ingressou em janeiro de 2019
+            Ingressou em janeiro de 2018
           </li>
         </ul>
 
         <Followage>
           <span>
-            <strong>17 </strong>Seguindo
+            <strong>18 </strong>Seguindo
           </span>
           <span>
             <strong>182 </strong>Seguidores
