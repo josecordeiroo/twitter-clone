@@ -6,13 +6,34 @@ const List = () => {
     return ( <Container>
         <Item>
             <Title>
-                <h2>Talvez você curta:</h2>
+                <h3>O que está acontecendo</h3>
             </Title>
         </Item>
         <Item>
-            <h3>Teste</h3>
-            <h3>Teste</h3>
-            <h3>Teste</h3>
+            <span>
+                Entretenimento
+            </span>
+            <strong>
+                Javascript
+            </strong>
+        </Item>
+
+        <Item>
+            <span>
+                Música
+            </span>
+            <strong>
+                React.JS
+            </strong>
+        </Item>
+
+        <Item>
+            <span>
+                Asssuntos do momento
+            </span>
+            <strong>
+                Node.JS
+            </strong>
         </Item>
     </Container> );
 }
