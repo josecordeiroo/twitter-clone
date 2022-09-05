@@ -11,6 +11,10 @@ import {
   FavoriteIcon,
   ProfileIcon,
   Button,
+  Botside,
+  Avatar,
+  ProfileData,
+  ExitIcon
 } from './styles';
 
 const MenuBar = () => {
@@ -38,7 +42,7 @@ const MenuBar = () => {
           <span>Favoritados</span>
         </MenuButton>
 
-        <MenuButton clasName="active">
+        <MenuButton className="active">
           <ProfileIcon />
           <span>Perfil</span>
         </MenuButton>
@@ -47,6 +51,15 @@ const MenuBar = () => {
           <span>Tweetar</span>
         </Button>
       </Topside>
+
+      <Botside>
+        <Avatar/>
+        <ProfileData>
+            <strong>José Cordeiro</strong>
+            <span>@josecordeiroo</span>
+        </ProfileData>
+        <ExitIcon/>
+      </Botside>
     </Container>
   );
 };

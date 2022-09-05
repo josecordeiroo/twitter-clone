@@ -47,7 +47,7 @@ export const Logo = styled(Twitter)`
 
   margin-bottom: 20px;
 `;
-export const MenuButton = styled.div`
+export const MenuButton = styled.button`
   display: flex;
   align-items: center;
   flex-shrink: 0;
@@ -57,7 +57,6 @@ export const MenuButton = styled.div`
   }
 
   @media (min-width: 1280px) {
-
     > span {
       display: inline;
       margin-left: 19px;
@@ -101,6 +100,15 @@ export const MenuButton = styled.div`
   &:hover {
     background-color: var(--twitter-dark-hover);
   }
+
+  &:hover,
+  &.active {
+    span,
+    svg {
+      color: var(--twitter);
+      fill: var(--twitter);
+    }
+  }
 `;
 
 export const Button = styled.button`
@@ -118,7 +126,7 @@ export const Button = styled.button`
   outline: 0;
 
   &:hover {
-    background: var(--twitter-dark-hover);
+    opacity: 0.75;
   }
 
   @media (min-width: 320px) {
@@ -149,4 +157,54 @@ export const FavoriteIcon = styled(FavoriteBorder)`
 `;
 export const ProfileIcon = styled(Person)`
   ${iconCSS}
+`;
+
+
+export const Botside = styled.div`
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+`
+export const Avatar = styled.div`
+    width: 39px;
+    height: 39px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+    background-color: var(--gray);
+`
+export const ProfileData = styled.div`
+    display: none;
+
+    @media(min-width: 1280px) {
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 10px;
+        font-size: 14px;
+
+        > span {
+            color: var(--gray);
+        }
+    }
+`
+
+export const ExitIcon = styled(ExitToApp)`
+  display: none;
+
+  @media(min-width: 1280px) {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    color: var(--white);
+    margin-left: 30px;
+    cursor: pointer;
+
+    &:hover {
+        > path {
+            color: var(--like);
+        }
+    }
+  }
 `;
